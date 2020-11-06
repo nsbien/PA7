@@ -311,6 +311,9 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLv-Dp-cU7">
                                                 <rect key="frame" x="0.0" y="0.0" width="182.5" height="30"/>
                                                 <state key="normal" title="Cancel"/>
+                                                <connections>
+                                                    <segue destination="IO1-Zx-tYk" kind="unwind" unwindAction="unwindCancelWithSegue:" id="Lzs-Fc-UJs"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUP-Lt-JWb">
                                                 <rect key="frame" x="182.5" y="0.0" width="182.5" height="30"/>
