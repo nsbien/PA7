@@ -1,12 +1,20 @@
 //
 //  TripDetailViewControllerUI.swift
 //  PA6
+//  Represents the trip details controller
+//
+//  CPSC 315, Fall 2020
+//  No sources to cite
 //
 //  Created by Nicole Bien on 10/31/20.
+//  Copyright (c) 2020 Nicole Bien. All rights reserved.
 //
 
 import UIKit
 
+/*
+ Shows user the details of the trip they selected
+ */
 class TripDetailViewControllerUI: UIViewController {
     
     var tripOptional: Trip? = nil
@@ -25,6 +33,9 @@ class TripDetailViewControllerUI: UIViewController {
         displayTrip()
     }
     
+    /*
+     Updates the components of the details to the trip
+     */
     func displayTrip() {
         if let trip = tripOptional {
             tripNumber.text = tripString
