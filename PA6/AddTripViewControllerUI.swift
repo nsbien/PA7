@@ -52,7 +52,7 @@ class AddTripViewControllerUI: UIViewController, UITextFieldDelegate {
                     if let _ = dateFormatterGet.date(from: startDate) {
                         print("ok")
                     } else {
-                        let alert = UIAlertController(title: title, message: "Missing Destination", preferredStyle: UIAlertController.Style.alert)
+                        let alert = UIAlertController(title: title, message: "Please enter valid start date", preferredStyle: UIAlertController.Style.alert)
                         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
                         }))
                         self.present(alert, animated: true, completion: nil)
@@ -61,7 +61,7 @@ class AddTripViewControllerUI: UIViewController, UITextFieldDelegate {
                     if let _ = dateFormatterGet.date(from: endDate) {
                         print("ok")
                     } else {
-                        let alert = UIAlertController(title: title, message: "Missing Destination", preferredStyle: UIAlertController.Style.alert)
+                        let alert = UIAlertController(title: title, message: "Please enter valid end date", preferredStyle: UIAlertController.Style.alert)
                         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
                         }))
                         self.present(alert, animated: true, completion: nil)
