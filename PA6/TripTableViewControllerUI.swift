@@ -44,7 +44,49 @@ class TripTableViewControllerUI: UIViewController, UITableViewDataSource, UITabl
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        
+        if let identifier = segue.identifier {
+            if identifier == "DetailSegue" {
+                if let tripDetailVC = segue.destination as? TripDetailViewControllerUI {
+                    if let indexPath = tableview.indexPathForSelectedRow {
+                        let trip = trips[indexPath.row]
+                        tripDetailVC.tripOptional = trip
+                    }
+                }
+            }
+            else if identifier == "AddSegue" {
+                print("cats")
+//                if let tripAddVC = segue.destination as? AddTripViewControllerUI {
+//                    if let indexPath = tableview.indexPathForSelectedRow {
+//                        let trip = trips[indexPath.row]
+//                        tripAddVC.tripOptional = trip
+//                    }
+//                }
+//                if let indexPath = tableview.indexPathForSelectedRow {
+//                    // delect the row!!
+//                    tableview.deselectRow(at: indexPath, animated: true)
+//                }
+            }
+        }
     }
+    
+    @IBAction func unwindToTripTableViewController(segue: UIStoryboardSegue) {
+        if let identifier = segue.identifier {
+            if identifier == "SaveUnwindSegue" {
+                if let tripAddVC = segue.source as? AddTripViewControllerUI {
+                    if let trip = tripAddVC.tripOptional {
+                        if let indexPath = tableview.indexPathForSelectedRow {
+                            trips[indexPath.row] = trip
+                        }
+                        else {
+                            trips.append(trip)
+                        }
+                        tableview.reloadData()
+                    }
+                }
+            }
+        }
+    }
+    
+    @IBAction func unwindCancel(segue: UIStoryboardSegue) {}
 }
 

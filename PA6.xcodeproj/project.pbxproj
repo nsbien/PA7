@@ -17,6 +17,7 @@
 		1EA3C8282554B87700DE262F /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA3C8272554B87700DE262F /* Trip.swift */; };
 		1EA3C82B2554C0DA00DE262F /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA3C82A2554C0DA00DE262F /* TripTableViewCell.swift */; };
 		1EA3C8312554D54100DE262F /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA3C8302554D54100DE262F /* TripViewController.swift */; };
+		1EA3C8372554E04100DE262F /* AddTripViewControllerUI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EA3C8362554E04100DE262F /* AddTripViewControllerUI.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1EA3C8272554B87700DE262F /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		1EA3C82A2554C0DA00DE262F /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 		1EA3C8302554D54100DE262F /* TripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
+		1EA3C8362554E04100DE262F /* AddTripViewControllerUI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTripViewControllerUI.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +72,7 @@
 				1EA3C82A2554C0DA00DE262F /* TripTableViewCell.swift */,
 				1EA3C8302554D54100DE262F /* TripViewController.swift */,
 				1EA3C81D254DF66000DE262F /* TripDetailViewControllerUI.swift */,
+				1EA3C8362554E04100DE262F /* AddTripViewControllerUI.swift */,
 				1EA3C80E254DF21000DE262F /* Main.storyboard */,
 				1EA3C811254DF21300DE262F /* Assets.xcassets */,
 				1EA3C813254DF21300DE262F /* LaunchScreen.storyboard */,
@@ -154,6 +157,7 @@
 				1EA3C82B2554C0DA00DE262F /* TripTableViewCell.swift in Sources */,
 				1EA3C809254DF21000DE262F /* AppDelegate.swift in Sources */,
 				1EA3C8282554B87700DE262F /* Trip.swift in Sources */,
+				1EA3C8372554E04100DE262F /* AddTripViewControllerUI.swift in Sources */,
 				1EA3C81E254DF66000DE262F /* TripDetailViewControllerUI.swift in Sources */,
 				1EA3C80B254DF21000DE262F /* SceneDelegate.swift in Sources */,
 			);
