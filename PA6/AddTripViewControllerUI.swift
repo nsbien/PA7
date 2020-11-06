@@ -7,10 +7,12 @@
 
 import UIKit
 
-class AddTripViewControllerUI: UIViewController {
+class AddTripViewControllerUI: UIViewController, UITextFieldDelegate {
     
     var tripOptional: Trip? = nil
+    var tripString: String = ""
     
+    @IBOutlet var tripNumberAddLabel: UILabel!
     @IBOutlet var destinationAddLabel: UITextField!
     @IBOutlet var startDateAddLabel: UITextField!
     @IBOutlet var endDateAddLabel: UITextField!
@@ -18,23 +20,30 @@ class AddTripViewControllerUI: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        tripNumberAddLabel.text = tripString
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let identifier = segue.identifier {
             if identifier == "SaveUnwindSegue" {
                 if let destination = destinationAddLabel.text, let startDate = startDateAddLabel.text, let endDate = endDateAddLabel.text {
-                    if let trip = tripOptional {
-                        trip.destination = destination
-                        trip.startDate = startDate
-                        trip.endDate = endDate
+                    if (destination == "") {
+                        let alert = UIAlertController(title: title, message: "Missing Destination", preferredStyle: UIAlertController.Style.alert)
+                        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { action in
+                        }))
+                        self.present(alert, animated: true, completion: nil)
                     }
-                    else {
-                        tripOptional = Trip(destination: destination, startDate: startDate, endDate: endDate)
-                    }
+                    // check start date
+                    // check end date
+                    tripOptional = Trip(destination: destination, startDate: startDate, endDate: endDate)
                 }
             }
         }
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 
 }

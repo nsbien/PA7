@@ -10,7 +10,9 @@ import UIKit
 class TripDetailViewControllerUI: UIViewController {
     
     var tripOptional: Trip? = nil
+    var tripString: String = ""
     
+    @IBOutlet var tripNumber: UILabel!
     @IBOutlet var destinationDetailLabel: UILabel!
     @IBOutlet var startDateDetailLabel: UILabel!
     @IBOutlet var endDateDetailLabel: UILabel!
@@ -20,7 +22,12 @@ class TripDetailViewControllerUI: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        displayTrip()
+    }
+    
+    func displayTrip() {
         if let trip = tripOptional {
+            tripNumber.text = tripString
             destinationDetailLabel.text = trip.destination
             startDateDetailLabel.text = trip.startDate
             endDateDetailLabel.text = trip.endDate

@@ -21,26 +21,26 @@
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TripCell" id="thm-cH-yos" customClass="TripTableViewCell" customModule="PA6" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="73.5"/>
+                                        <rect key="frame" x="0.0" y="28" width="375" height="82"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="thm-cH-yos" id="Oah-xH-v39">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="73.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="82"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d3R-1K-uoq">
-                                                    <rect key="frame" x="5" y="5" width="365" height="63.5"/>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="d3R-1K-uoq">
+                                                    <rect key="frame" x="5" y="5" width="365" height="72"/>
                                                     <subviews>
-                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="e2m-KZ-kfO">
-                                                            <rect key="frame" x="0.0" y="0.0" width="182.5" height="63.5"/>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="e2m-KZ-kfO">
+                                                            <rect key="frame" x="0.0" y="0.0" width="167.5" height="72"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Destination" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SHp-gL-ZO2">
-                                                                    <rect key="frame" x="0.0" y="0.0" width="182.5" height="49"/>
+                                                                    <rect key="frame" x="0.0" y="0.0" width="167.5" height="52.5"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="18"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tvd-UO-TD3">
-                                                                    <rect key="frame" x="0.0" y="49" width="182.5" height="14.5"/>
+                                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Tvd-UO-TD3">
+                                                                    <rect key="frame" x="0.0" y="57.5" width="167.5" height="14.5"/>
                                                                     <subviews>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00/00/0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ukU-Tp-Y5D">
                                                                             <rect key="frame" x="0.0" y="0.0" width="68" height="14.5"/>
@@ -49,36 +49,26 @@
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eCE-bR-c6j">
-                                                                            <rect key="frame" x="68" y="0.0" width="46.5" height="14.5"/>
+                                                                            <rect key="frame" x="73" y="0.0" width="21.5" height="14.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
-                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00/00/0000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJT-QD-T9o">
-                                                                            <rect key="frame" x="114.5" y="0.0" width="68" height="14.5"/>
+                                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="00/00/0000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJT-QD-T9o">
+                                                                            <rect key="frame" x="99.5" y="0.0" width="68" height="14.5"/>
                                                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                                             <nil key="textColor"/>
                                                                             <nil key="highlightedColor"/>
                                                                         </label>
                                                                     </subviews>
-                                                                    <constraints>
-                                                                        <constraint firstItem="ukU-Tp-Y5D" firstAttribute="bottom" secondItem="Tvd-UO-TD3" secondAttribute="bottomMargin" id="6gG-vx-lbO"/>
-                                                                        <constraint firstItem="IJT-QD-T9o" firstAttribute="top" secondItem="Tvd-UO-TD3" secondAttribute="topMargin" id="9bs-gP-T8C"/>
-                                                                        <constraint firstItem="IJT-QD-T9o" firstAttribute="trailing" secondItem="Tvd-UO-TD3" secondAttribute="trailingMargin" id="K2Z-2a-STH"/>
-                                                                        <constraint firstItem="eCE-bR-c6j" firstAttribute="leading" secondItem="ukU-Tp-Y5D" secondAttribute="trailing" id="UwV-tH-T0n"/>
-                                                                        <constraint firstItem="IJT-QD-T9o" firstAttribute="width" secondItem="ukU-Tp-Y5D" secondAttribute="width" id="YYU-UR-CFz"/>
-                                                                        <constraint firstItem="ukU-Tp-Y5D" firstAttribute="leading" secondItem="Tvd-UO-TD3" secondAttribute="leadingMargin" id="bGq-ka-GdR"/>
-                                                                        <constraint firstItem="IJT-QD-T9o" firstAttribute="bottom" secondItem="Tvd-UO-TD3" secondAttribute="bottomMargin" id="iHt-xX-zyc"/>
-                                                                        <constraint firstItem="ukU-Tp-Y5D" firstAttribute="top" secondItem="Tvd-UO-TD3" secondAttribute="topMargin" id="kgI-Vr-NQJ"/>
-                                                                        <constraint firstItem="eCE-bR-c6j" firstAttribute="bottom" secondItem="Tvd-UO-TD3" secondAttribute="bottomMargin" id="n61-uQ-KFO"/>
-                                                                        <constraint firstItem="eCE-bR-c6j" firstAttribute="top" secondItem="Tvd-UO-TD3" secondAttribute="topMargin" id="nlZ-Pf-v1b"/>
-                                                                        <constraint firstItem="IJT-QD-T9o" firstAttribute="leading" secondItem="eCE-bR-c6j" secondAttribute="trailing" id="rXo-h5-aRY"/>
-                                                                    </constraints>
                                                                 </stackView>
                                                             </subviews>
+                                                            <constraints>
+                                                                <constraint firstItem="Tvd-UO-TD3" firstAttribute="top" secondItem="SHp-gL-ZO2" secondAttribute="bottom" constant="5" id="GG4-MF-Z3q"/>
+                                                            </constraints>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VFW-cQ-SoW">
-                                                            <rect key="frame" x="182.5" y="0.0" width="182.5" height="63.5"/>
+                                                            <rect key="frame" x="197.5" y="0.0" width="167.5" height="72"/>
                                                         </imageView>
                                                     </subviews>
                                                     <constraints>
@@ -121,9 +111,14 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="SIf-2A-PSd">
+                        <barButtonItem key="leftBarButtonItem" title="Edit" id="vc7-hl-O8U">
+                            <connections>
+                                <action selector="editButtonPressed:" destination="vyt-wR-f1z" id="7GI-Ab-IhN"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="rbN-hn-9an">
                             <connections>
-                                <segue destination="qeS-l4-GRE" kind="show" id="Sp5-5A-nzF"/>
+                                <segue destination="qeS-l4-GRE" kind="show" identifier="AddSegue" id="Sp5-5A-nzF"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -229,6 +224,7 @@
                         <outlet property="endDateDetailLabel" destination="yLU-YC-xgN" id="N7T-bq-M7f"/>
                         <outlet property="startDateDetailLabel" destination="e26-0R-f0e" id="Jt2-lw-66w"/>
                         <outlet property="tripImageView" destination="5Nz-ZL-Hun" id="v7r-Hf-e8G"/>
+                        <outlet property="tripNumber" destination="zLa-9q-ecW" id="z13-4o-NNd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="w57-Oe-vh9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -265,6 +261,9 @@
                                                 <rect key="frame" x="95.5" y="0.0" width="269.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="qeS-l4-GRE" id="kft-G7-LTa"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -281,6 +280,9 @@
                                                 <rect key="frame" x="86.5" y="0.0" width="278.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="qeS-l4-GRE" id="fHz-Xk-5xw"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -297,6 +299,9 @@
                                                 <rect key="frame" x="78.5" y="0.0" width="286.5" height="34"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="qeS-l4-GRE" id="TVT-Os-p7b"/>
+                                                </connections>
                                             </textField>
                                         </subviews>
                                     </stackView>
@@ -306,15 +311,12 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OLv-Dp-cU7">
                                                 <rect key="frame" x="0.0" y="0.0" width="182.5" height="30"/>
                                                 <state key="normal" title="Cancel"/>
-                                                <connections>
-                                                    <segue destination="IO1-Zx-tYk" kind="unwind" unwindAction="unwindCancelWithSegue:" id="bHm-HX-Fqv"/>
-                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="top" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oUP-Lt-JWb">
                                                 <rect key="frame" x="182.5" y="0.0" width="182.5" height="30"/>
                                                 <state key="normal" title="Save"/>
                                                 <connections>
-                                                    <segue destination="IO1-Zx-tYk" kind="unwind" unwindAction="unwindToTripTableViewControllerWithSegue:" id="5oz-l2-38w"/>
+                                                    <segue destination="IO1-Zx-tYk" kind="unwind" identifier="SaveUnwindSegue" unwindAction="unwindToTripTableViewControllerWithSegue:" id="5oz-l2-38w"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -338,6 +340,7 @@
                         <outlet property="destinationAddLabel" destination="fY0-BV-0nh" id="aut-Rd-hTy"/>
                         <outlet property="endDateAddLabel" destination="2vA-R5-lnw" id="Soc-4k-3BH"/>
                         <outlet property="startDateAddLabel" destination="IDN-jh-k8l" id="rrk-cx-60G"/>
+                        <outlet property="tripNumberAddLabel" destination="qvS-zS-QCt" id="tpp-IO-ytI"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MlV-SS-4Me" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

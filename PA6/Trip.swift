@@ -7,10 +7,13 @@
 
 import Foundation
 
-class Trip {
+class Trip: CustomStringConvertible {
     var destination: String
     var startDate: String
     var endDate: String
+    var description: String {
+        return destination
+    }
     
     init(destination: String, startDate: String, endDate: String) {
         self.destination = destination
